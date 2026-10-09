@@ -1,0 +1,488 @@
+/* ---------- General ---------- */
+
+body{
+    font-family: 'Inter', sans-serif;
+    background:#f8fafc;
+    color:#1f2937;
+    margin:0;
+    line-height:1.7;
+}
+
+.project-nav{
+    max-width:1100px;
+    margin:40px auto 20px;
+    padding:0 20px;
+}
+
+.project-nav a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-nav a:hover{
+    color:#1d4ed8;
+}
+
+/* ---------- Hero ---------- */
+
+.project-hero{
+    max-width:1100px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.project-hero h1{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:12px;
+    color:#111827;
+}
+
+.project-subtitle{
+    font-size:1.25rem;
+    color:#2563eb;
+    font-weight:600;
+    margin-bottom:24px;
+}
+
+.project-description{
+    max-width:720px;
+    font-size:1.05rem;
+    color:#4b5563;
+    margin-bottom:40px;
+}
+
+/* ---------- Project Meta ---------- */
+
+.project-meta{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+
+    max-width:1100px;
+    margin:0 auto 5rem;
+    padding:2rem 0;
+    border-top:1px solid #e5e7eb;
+}
+
+.meta-item{
+    display:flex;
+    flex-direction:column;
+}
+
+.meta-label{
+    font-size:.85rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:#6b7280;
+    margin-bottom:6px;
+}
+
+.meta-value{
+    font-size:1rem;
+    font-weight:600;
+    color:#111827;
+}
+
+/* ---------- Project Overview ---------- */
+
+.project-overview{
+    max-width:1100px;
+    margin:80px auto;
+    padding:100px 20px 60px;
+}
+
+.overview-content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.overview-left h2{
+    font-size:2rem;
+    margin-bottom:24px;
+    color:#111827;
+}
+
+.overview-left p{
+    color:#4b5563;
+    margin-bottom:20px;
+}
+
+.info-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    margin-bottom:25px;
+    font-size:1.25rem;
+}
+
+.detail-row{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:14px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.detail-row:last-child{
+    border-bottom:none;
+}
+
+.detail-row span{
+    color:#6b7280;
+}
+
+.detail-row strong{
+    text-align:right;
+    color:#111827;
+}
+
+.snapshot-item{
+    margin-bottom:35px;
+}
+
+.snapshot-item h3{
+    font-size:1.2rem;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.snapshot-item p{
+    color:#4b5563;
+    margin:0;
+}
+
+.analysis-chart{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.analysis-chart img{
+    width:100%;
+    max-width:700px;
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    display:block;
+}
+
+/* ==========================
+   Analysis Sections
+========================== */
+
+.analysis-section{
+
+    max-width:1200px;
+    margin:0 auto;
+    padding:120px 20px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+
+}
+
+.analysis-section:nth-of-type(even){
+
+    background:#ffffff;
+
+}
+
+.analysis-section.reverse{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.analysis-text h2{
+
+    font-size:2.2rem;
+    margin-bottom:20px;
+    color:#111827;
+
+}
+
+.analysis-text p{
+
+    color:#4b5563;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+}
+
+.section-number{
+
+    display:inline-block;
+
+    color:#2563eb;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:.18em;
+
+    margin-bottom:12px;
+
+    text-transform:uppercase;
+
+}
+
+.analysis-chart img{
+
+    width:100%;
+
+    border-radius:22px;
+
+    box-shadow:0 24px 60px rgba(0,0,0,.15);
+
+    transition:.35s;
+    max-width: 650px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.analysis-chart img:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.reverse .analysis-chart{
+
+    order:1;
+
+}
+
+.reverse .analysis-text{
+
+    order:2;
+
+}
+
+.analysis-section{
+
+    position:relative;
+
+}
+
+.analysis-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-70px;
+
+    width:100%;
+
+    height:1px;
+
+    background:#e5e7eb;
+
+}
+
+.last-section::after{
+
+    display:none;
+
+}
+
+.correlation-matrix{
+    width:100%;
+    max-width:700px;
+}
+
+/* ========================================
+   Asset Universe (Single Column Layout)
+======================================== */
+
+.asset-universe-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.asset-universe-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asset-universe-chart img {
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    display: block;
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:900px){
+
+    .analysis-section,
+    .analysis-section.reverse{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .reverse .analysis-chart{
+
+        order:2;
+
+    }
+
+    .reverse .analysis-text{
+
+        order:1;
+
+    }
+
+}
+
+/* ==========================
+   Skills
+========================== */
+
+.skills-section,
+.takeaways-section,
+.related-projects{
+
+    max-width:1100px;
+    margin:100px auto;
+    padding:0 20px;
+
+}
+
+.skills-section h2,
+.takeaways-section h2,
+.related-projects h2{
+
+    font-size:2rem;
+    margin-bottom:35px;
+
+}
+
+.skills-grid,
+.related-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.skill-card,
+.related-card,
+.takeaway-card{
+
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.skill-card:hover,
+.related-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.related-card{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+.related-card h3,
+.skill-card h3{
+
+    color:#2563eb;
+    margin-bottom:12px;
+
+}
+
+.related-card p,
+.skill-card p,
+.takeaway-card p{
+
+    color:#4b5563;
+    margin:0;
+
+}
+
+/* ==========================
+   Downloads
+========================== */
+
+.downloads-section{
+
+    max-width:1100px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+
+}
+
+.downloads-section h2{
+
+    margin-bottom:15px;
+
+}
+
+.downloads-section p{
+
+    color:#4b5563;
+    margin-bottom:35px;
+
+}
+
+.download-buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.download-btn{
+
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-3px);
+
+}
